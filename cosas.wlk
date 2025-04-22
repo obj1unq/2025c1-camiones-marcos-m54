@@ -4,22 +4,20 @@ object knightRider {
 }
 
 object bumblebee{
-	var estaTransformadoEnRobot = true
+	var transformadoEn = robot
+	
+	method transformadoEn() = transformadoEn
 	method peso() = 800
 
-	method estaTransformadoEnRobot(){
-		return estaTransformadoEnRobot
-	}
 	
-	method nivelPeligrosidad(){
-		if (self.estaTransformadoEnRobot()){
-			return 30
-		}
-		else
-			return 15
-	}
+}
 
-	
+object auto{
+	method nivelPeligrosidad() { return 15 }
+}
+
+object robot{
+	method nivelPeligrosidad() { return 30 }
 }
 
 
