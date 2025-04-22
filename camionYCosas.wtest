@@ -1,0 +1,14 @@
+import camion.*
+import cosas.*
+
+describe "Camion de transporte"{
+
+    test "Transporte de cosas pesos y peligrosidad"{
+        assert.equals(500, knightRider.peso())
+        assert.equals(10, knightRider.nivelPeligrosidad())
+        
+        assert.equals(800, bumblebee.peso())
+//        assert.that(bumblebee.estaTransformadoEnRobot())
+//        assert.equals(30, bumbleb)
+    }
+}
